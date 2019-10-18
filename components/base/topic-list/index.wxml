@@ -1,0 +1,15 @@
+<view class="topic-list">
+  <view class="content">
+    <view class="subtitle">{{title}}</view>
+    <view class="list-item" wx:for="{{list}}" wx:key="{{item.id}}" wx:item="{{item}}" wx:index="{{index}}">
+      <view class="img" wx:if="{{index <= 2}}">
+        <image wx:if="{{index === 0}}" src="/assets/images/common/ic_diyi.png" />
+        <image wx:if="{{index === 1}}" src="/assets/images/common/ic_dier.png" />
+        <image wx:if="{{index === 2}}" src="/assets/images/common/ic_disan.png" />
+      </view>
+      <view wx:if="{{index > 2}}" class="index">{{index + 1}}</view>
+      <view class="title">{{item.name}}</view>
+      <view class="num {{index === 0 ? 'first' : ''}} {{index === 1 ? 'second' : ''}} {{index === 2 ? 'thrid' : ''}}" >{{item.num}}</view>
+    </view>
+  </view>
+</view>

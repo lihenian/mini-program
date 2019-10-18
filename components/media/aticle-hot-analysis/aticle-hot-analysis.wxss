@@ -1,0 +1,26 @@
+/* 新闻版块热度分析 */
+.newshot-analysis {
+  width: 100%;
+  height: 800rpx;
+  background: #ffffff;
+  box-sizing: border-box;
+  padding: 0 15rpx;
+  margin: 1px 0;
+}
+.newshot-analysis .content {
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px dashed #d7d7d7;
+}
+.newshot-analysis .title {
+  height:100rpx;
+  line-height: 100rpx;
+  font-size:32rpx;
+  font-family:PingFang SC;
+  font-weight:800;
+  color:rgba(51,51,51,1);
+}
+.newshot-analysis .newshot-chart {
+  width: 100%;
+  height: 700rpx;
+}

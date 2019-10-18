@@ -1,0 +1,8 @@
+<view class="newshot-analysis">
+    <view class="content">
+      <view class="title">{{lastMonth}}新闻板块热度分析</view>
+      <view class="newshot-chart">
+        <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ecbar }}"></ec-canvas>
+      </view>
+    </view>
+  </view>

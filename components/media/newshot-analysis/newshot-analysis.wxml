@@ -1,0 +1,8 @@
+<view class="newshot-analysis">
+  <view class="content">
+    <view class="title">{{lastMonth}}圈子热度分析</view>
+    <view class="newshot-chart">
+      <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ecbar }}"></ec-canvas>
+    </view>
+  </view>
+</view>

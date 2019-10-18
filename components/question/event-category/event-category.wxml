@@ -1,0 +1,9 @@
+<view class="profession-distribute">
+    <view class="profession-percentange">事件上报类型分析</view>
+    <view class="profession-chart">
+        <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ecpie }}"></ec-canvas>
+    </view>
+    <view class="profession-chart-cricle">
+        <ec-canvas id="mychart-dom-cricle" canvas-id="mychart-cricle" ec="{{ eccricle }}"></ec-canvas>
+    </view>
+</view>

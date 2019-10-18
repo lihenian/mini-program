@@ -1,0 +1,19 @@
+<view class="enter-statistics">
+  <view class="content">
+    <view class="title">文章参与统计分析</view>
+    <view class="statistics-num">
+      <view class="classify classify1">
+        <view>{{interactStatisticsData.commentNum}}</view>
+        <text>累计评论数</text>
+      </view>
+      <view class="classify classify2">
+        <view>{{interactStatisticsData.shareNum}}</view>
+        <text>累计分享数</text>
+      </view>
+      <view class="classify classify3">
+        <view>{{interactStatisticsData.approveNum}}</view>
+        <text>累计点赞数</text>
+      </view>
+    </view>
+  </view>
+</view>

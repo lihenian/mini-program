@@ -1,0 +1,57 @@
+/* 文章参与统计分析 */
+.enter-statistics {
+  width: 100%;
+  margin-top: 20rpx;
+  height: 276rpx;
+  background: #ffffff;
+  box-sizing: border-box;
+  padding: 0 15rpx;
+}
+.enter-statistics .content {
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px dashed #d7d7d7;
+}
+.enter-statistics .title {
+  height:100rpx;
+  line-height: 100rpx;
+  font-size:32rpx;
+  font-family:PingFang SC;
+  font-weight:800;
+  color:rgba(51,51,51,1);
+}
+.enter-statistics .statistics-num {
+  width: 100%;
+  height: 176rpx;
+  padding: 23rpx 0 49rpx;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+}
+.enter-statistics .statistics-num > .classify + .classify {
+  border-left: 1px solid #e7e7e7;
+}
+.enter-statistics .statistics-num .classify {
+  flex: 1;
+}
+.enter-statistics .statistics-num .classify view {
+  width: 100%;
+  font-size:46rpx;
+  text-align: center;
+  font-weight:500;
+  color:rgba(91,133,251,1);
+}
+.enter-statistics .statistics-num .classify2 view {
+  color:rgba(100,194,55,1);
+}
+.enter-statistics .statistics-num .classify3 view {
+  color:rgba(238,171,64,1);
+}
+.enter-statistics .statistics-num .classify text {
+  display: block;
+  width: 100%;
+  text-align:center;
+  font-size:26rpx;
+  font-weight:500;
+  color:rgba(153,153,153,1);
+}

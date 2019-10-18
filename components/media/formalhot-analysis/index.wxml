@@ -1,0 +1,12 @@
+<view class="formalhot-analysis">
+  <view class="content">
+    <view class="title">{{lastMonth}}官微热度分析</view>
+    <view class="item" wx:for="{{formalHotList}}" wx:for-item="item" wx:key="{{item .id}}">
+      <view class='name'>
+        <text class="street">{{item.name}}</text>
+        <text class="num">{{item.num}}</text>
+      </view>
+      <wux-progress strokeWidth="13" activeColor="#5B85FB" backgroundColor="#e7edfe" shape="round" percent="{{item.num/(maxAmount*1.1)*100}}" />
+    </view>
+  </view>
+</view>
