@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "article-analysis": "/components/media/article-analysis/article-analysis",
+    "newshot-analysis": "/components/media/newshot-analysis/newshot-analysis",
+    "aticle-hot-analysis": "/components/media/aticle-hot-analysis/aticle-hot-analysis",
+    "formalhot-analysis": "/components/media/formalhot-analysis/index",
+    "topic-list": "/components/base/topic-list/index"
+  }
+}

@@ -1,0 +1,11 @@
+<view id="question">
+
+  <event-category></event-category>
+
+  <event-time></event-time>
+
+  <topic-list dataList="{{hotEventList}}" itemName="event" title="热议事件TOP 10"></topic-list>
+
+  <event-question></event-question>
+
+</view>

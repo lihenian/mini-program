@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/user/index",
+    "pages/question/index",
+    "pages/media/index",
+    "pages/login/index",
+    "pages/map/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "在市北运营大数据",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "backgroundColor": "#fff",
+    "selectedColor": "#3652fe",
+    "position": "top",
+    "list": [
+      {
+        "text": "用户",
+        "pagePath": "pages/user/index"
+      },
+      {
+        "text": "地图",
+        "pagePath": "pages/map/index"
+      },
+      {
+        "text": "问题",
+        "pagePath": "pages/question/index"
+      },
+      {
+        "text": "媒体",
+        "pagePath": "pages/media/index"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

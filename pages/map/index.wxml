@@ -1,0 +1,3 @@
+<view class="map">
+  <web-view src="https://esua.elinkchina.com.cn"></web-view>
+</view>

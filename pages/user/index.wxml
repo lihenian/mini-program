@@ -1,0 +1,137 @@
+<view id="user">
+  <view class="user-statistics">
+    <view class="title">用户统计</view>
+    <view class="content">
+      <view class="classify classify1">
+        <view>{{statistics.downloadNum}}</view>
+        <text>下载用户数</text>
+      </view>
+      <view class="classify classify2">
+        <view>{{statistics.registerNum}}</view>
+        <text>注册用户数</text>
+      </view>
+      <view class="classify classify3">
+        <view>{{statistics.activation}}%</view>
+        <text>平均月活</text>
+      </view>
+    </view>
+  </view>
+  <view class="user-paint">
+    <view class="content">
+      <view class="title">用户画像</view>
+      <view class="sex-percentange">
+        ·
+        <text>性别比例</text>
+        ·
+      </view>
+      <view class="percentange-chart">
+        <view class="image">
+          <image src="../../assets/images/user/ic_nan@2x.png" />
+          <image src="../../assets/images/user/ic_nu@2x.png" />
+        </view>
+        <wux-progress activeColor="#3c7bff" backgroundColor="#ffb415" shape="round" percent="{{ageAndSex.male}}" />
+        <view class="sex-classify">
+          <view>
+            <text>男</text>
+            <text class="percentange male">{{ageAndSex.male}}%</text>
+          </view>
+          <view>
+            <text>女</text>
+            <text class="percentange female">{{ageAndSex.female}}%</text>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="age-distribute">
+    <view class="content">
+      <view class="age-percentange">
+        ·
+        <text>年龄分布</text>
+        ·
+      </view>
+      <view class="age-classify">
+        <view class="circle">
+          <wux-circle percent="{{ageAndSex.underTwenty}}" color="#5B85FB" size="80" sAngle="270" strokeWidth="8">
+            <view class="age-region regionone">
+              <view>{{ageAndSex.underTwenty}}%</view>
+              <text>20岁以下</text>
+            </view>
+          </wux-circle>
+        </view>
+        <view class="circle">
+          <wux-circle percent="{{ageAndSex.underThirty}}" color="#64C237" size="80" sAngle="270" strokeWidth="8">
+            <view class="age-region regiontwo">
+              <view>{{ageAndSex.underThirty}}%</view>
+              <text>20-30岁</text>
+            </view>
+          </wux-circle>
+        </view>
+        <view class="circle">
+          <wux-circle percent="{{ageAndSex.underForty}}" color="#02C7BA" size="80" sAngle="270" strokeWidth="8">
+            <view class="age-region regionthree">
+              <view>{{ageAndSex.underForty}}%</view>
+              <text>30-40岁</text>
+            </view>
+          </wux-circle>
+        </view>
+        <view class="circle">
+          <wux-circle percent="{{ageAndSex.underFifty}}" color="#FFAE12" size="80" sAngle="270" strokeWidth="8">
+            <view class="age-region regionfour">
+              <view>{{ageAndSex.underFifty}}%</view>
+              <text>40-50岁</text>
+            </view>
+          </wux-circle>
+        </view>
+        <view class="circle">
+          <wux-circle percent="{{ageAndSex.underSixty}}" color="#FF5B27" size="80" sAngle="270" strokeWidth="8">
+            <view class="age-region regionfive">
+              <view>{{ageAndSex.underSixty}}%</view>
+              <text>50-60岁</text>
+            </view>
+          </wux-circle>
+        </view>
+        <view class="circle">
+          <wux-circle percent="{{ageAndSex.others}}" color="#A640EE" size="80" sAngle="270" strokeWidth="8">
+            <view class="age-region regionsix">
+              <view>{{ageAndSex.others}}%</view>
+              <text>60岁以上</text>
+            </view>
+          </wux-circle>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="profession-distribute">
+    <view class="profession-percentange">
+      ·
+      <text>职业分布</text>
+      ·
+    </view>
+    <view class="profession-chart">
+      <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ ecpie }}"></ec-canvas>
+    </view>
+  </view>
+  <view class="bar-chart">
+    <view class="content">
+      <view class="title">
+        <view>{{year}}新增注册用户分析</view>
+        <text>新增用户： {{userNum}}</text>
+      </view>
+      <view class="user-analysis-chart">
+        <ec-canvas id="mychart-dom-bar" canvas-id="mychart-bar" ec="{{ ecbar }}"></ec-canvas>
+      </view>
+    </view>
+  </view>
+  <view class="line-chart">
+    <view class="content">
+      <view class="title">
+        <view>{{year}}注册用户月活分析</view>
+        <text>平均月活： {{aveLive}}</text>
+      </view>
+      <view class="avange-analysis-chart">
+        <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ecline }}"></ec-canvas>
+      </view>
+    </view>
+  </view>
+</view>

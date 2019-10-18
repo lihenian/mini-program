@@ -1,0 +1,13 @@
+<view class="media">
+  <article-analysis></article-analysis>
+  
+  <aticle-hot-analysis></aticle-hot-analysis>
+
+  <topic-list dataList="{{hotNewsTopicList}}" itemName="articleTitle" itemNum="readRank" title="{{lastMonthName}}热门新闻热议"></topic-list>
+
+  <newshot-analysis></newshot-analysis>
+
+  <topic-list dataList="{{circleHotTopicList}}" title="{{lastMonthName}}圈子热议话题"></topic-list>
+  
+  <formalhot-analysis></formalhot-analysis>
+</view>

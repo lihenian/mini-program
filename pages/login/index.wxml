@@ -1,0 +1,32 @@
+<view class="login">
+
+  <view class="logo">
+    <image class="background" src="../../assets/images/login/background.png" />
+    <view class="inshibei-logo">
+      <image src="../../assets/images/login/logo.png" />
+    </view>
+  </view>
+
+  <view class="signin">
+    <view class="content">
+      <view class="title">在市北-运营大数据</view>
+      <view class="signin-input">
+        <label for="user" class="user">
+          <view>
+            <image src="../../assets/images/login/user.png" />
+            <input bindinput='binduserinput' value="{{username}}" type="text" placeholder="请输入用户名" confirm-type="next"/>
+          </view>
+        </label>
+        <label for="password" class="password">
+          <view>
+            <image src="../../assets/images/login/password.png" />
+            <input bindinput="bindpasswordinput" value="{{password}}" type="password" placeholder="请输入密码" confirm-type="go"/>
+          </view>
+        </label>
+      </view>
+      <view class="signin-button">
+        <button bind:type="default" size="default" bindtap="login">登录</button>
+      </view>
+    </view>
+  </view>
+</view>

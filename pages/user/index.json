@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "ec-canvas": "../../ec-canvas/ec-canvas",
+    "wux-progress": "../../wux/progress/index",
+    "wux-circle": "../../wux/circle/index"
+  }
+}

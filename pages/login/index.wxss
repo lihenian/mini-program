@@ -1,0 +1,108 @@
+page {
+  width: 100%;
+  height: 100vh;
+  background: #ffffff;
+}
+.login {
+  width: 100%;
+  height: 100vh;
+}
+.logo {
+  width: 100%;
+  height: 470rpx;
+  position: relative;
+}
+.logo .background {
+  width:100%;
+  height:100%;
+}
+.logo .inshibei-logo {
+  position: absolute;
+  width: 148rpx;
+  height: 148rpx;
+  top: 97rpx;
+  left: 50%;
+  margin-left: -74rpx;
+}
+.logo .inshibei-logo image {
+  width: 100%;
+  height: 100%;
+}
+
+.signin {
+  width: 100%;
+  height: 756rpx;
+  box-sizing: border-box;
+  padding: 0 36rpx;
+  position: relative;
+  top: -130rpx;
+  z-index: 100;
+}
+.signin .content {
+  width: 100%;
+  height: 100%;
+  box-shadow: 0px 10px 73px 0px rgba(153,153,153,0.3);
+  border-radius: 27rpx;
+  background: #ffffff;
+}
+.signin .title {
+  width: 100%;
+  text-align:center;
+  height: 181rpx;
+  line-height: 181rpx;
+  font-size:46rpx;
+  font-weight:bold;
+  color:rgba(38,38,38,1);
+}
+.signin .signin-input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 50rpx;
+}
+.signin .signin-input label {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  padding-bottom: 14rpx;
+  height:105rpx;
+  border-bottom: 1px solid #eeeeee;
+}
+.signin .signin-input label view {
+  display: flex;
+  align-items: center;
+  width:100%;
+  height: 100%;
+  position: relative;
+  top: 25rpx;
+}
+.signin .signin-input label input{
+  height: 50rpx;
+  height: 50rpx;
+  width: 100%;
+}
+.signin .signin-input label image {
+  margin: 0 30rpx 0 28rpx;
+}
+.signin .signin-input .user image {
+  width: 32rpx;
+  height:30rpx;
+}
+.signin .signin-input .password image {
+  width: 32rpx;
+  height: 32rpx;
+}
+.signin .signin-button {
+  margin-top: 98rpx;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 50rpx;
+}
+.signin .signin-button button {
+  background: linear-gradient(to right, #2a5cff, #4baef9);
+  font-size:37rpx;
+  font-weight:bold;
+  color:rgba(255,255,255,1);
+}
+.signin .signin-button .button-hover[type=default]{
+  background: linear-gradient(to right, #1046fa, #0091fa);
+}

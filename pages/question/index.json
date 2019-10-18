@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "event-category": "../../components/question/event-category/event-category",
+    "event-time": "../../components/question/event-time/event-time",
+    "event-question": "../../components/question/event-question/event-question",
+    "topic-list": "../../components/base/topic-list/index"
+  }
+}
